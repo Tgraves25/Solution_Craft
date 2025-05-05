@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Ticket</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script type="module" src="../js/script.js"></script>
+  <script type="module" src="../js/api.js"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <h1>Solution Craft</h1>
+    <ul>
+      <li><a href="../index.html">Dashboard</a></li>
+      <li><a href="ticket-list.html">View Tickets</a></li>
+      <li><a href="ticket-card.html">Ticket Details</a></li>
+    </ul>
+  </nav>
+
+  <main class="create-ticket-container">
+    <h2>Create a New Ticket</h2>
+    <form id="create-ticket-form">
+      <label for="customer_name">Customer Name:</label>
+      <input type="text" id="customer_name" name="customer_name" required />
+
+      <label for="email">Customer Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="title">Ticket Title:</label>
+      <input type="text" id="title" name="title" required />
+
+      <label for="issue_description">Description:</label>
+      <textarea id="issue_description" name="issue_description" rows="4" required></textarea>
+
+      <label for="priority">Priority:</label>
+      <select id="priority" name="priority" required>
+        <option value="">Select The Priority</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+        <option value="Critical">Critical</option>
+      </select>
+
+      <label for="assigned_to">Assign To:</label>
+      <select id="assigned_to" name="assigned_to" required>
+        <option value="">Select A Technician</option>
+        <option value="1">Trevone Graves</option>
+        <option value="2">Ethan Varisco</option>
+        <option value="3">Terry Fox</option>
+        <option value="4">Laelan Reyes</option>
+        <option value="5">Alyssa Montoya</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>

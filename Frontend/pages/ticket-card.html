@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Details</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script type="module" src="../js/script.js"></script>
+  <script type="module" src="../js/api.js"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <h1>Solution Craft</h1>
+    <ul>
+      <li><a href="../index.html">Dashboard</a></li>
+      <li><a href="ticket-list.html">View Tickets</a></li>
+      <li><a href="create-ticket.html">Create Ticket</a></li>
+    </ul>
+  </nav>
+
+  <main class="ticket-card-container">
+    <h2>Ticket Details</h2>
+    <div class="ticket-card" id="ticket-details">
+      <p><strong>ID:</strong> <span id="ticket-id"></span></p>
+      <p><strong>Title:</strong> <span id="ticket-title"></span></p>
+      <p><strong>Description:</strong> <span id="ticket-description"></span></p>
+      <p><strong>Status:</strong> <span id="ticket-status"></span></p>
+      <p><strong>Priority:</strong> <span id="ticket-priority"></span></p>
+      <p><strong>Assigned To:</strong> <span id="ticket-assigned"></span></p>
+      
+      <!--Status Buttons-->
+      <button id="mark-in-progress" onclick="changeTicketStatus('In Progress')">Mark as In Progress</button>
+      <button id="resolve-ticket" onclick="changeTicketStatus('Resolved')">Mark as Resolved</button>
+    </div>
+  </main>
+</body>
+</html>
